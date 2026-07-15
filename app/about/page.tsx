@@ -1,0 +1,8 @@
+import type { Metadata } from "next";
+import Image from "next/image";
+import { Heart, Leaf, Sparkles } from "lucide-react";
+import { Header } from "@/src/components/header";
+import { Footer } from "@/src/components/footer";
+export const metadata: Metadata = { title: "เรื่องของเรา" };
+export default function AboutPage() { return <><Header/><main><section className="page-hero about-page-hero"><div className="shell"><span className="eyebrow">THE STORY BEHIND THE SCOOP</span><h1>Small shop.<br/><em>Big Chomp Energy.</em></h1></div></section><section className="section"><div className="shell story-grid"><div className="story-photo"><Image src="/images/instagram/post-12.jpg" alt="ไอศกรีม Chomp Chomp Creamery ในร้าน" fill sizes="50vw"/></div><div><span className="eyebrow">HELLO, WE’RE CHOMP CHOMP</span><h2>ร้านเล็ก ๆ ที่จริงจังกับ<br/><em>ความสุขทุกสกู๊ป</em></h2><p>เราเริ่ม Chomp Chomp จากความหลงใหลในไอศกรีม และความเชื่อว่ารสชาติที่ดีไม่จำเป็นต้องซับซ้อน—แค่วัตถุดิบจริง ความตั้งใจจริง และความสนุกเวลาทำ</p><p>ทุกวันเราทำไอศกรีมทีละแบตช์ ทดลองรสใหม่ และฟังเสียงลูกค้าที่แวะมาหาเราตรงข้ามตลาดบ้านใหม่</p></div></div></section><section className="values-section"><div className="shell"><div className="section-heading"><div><span className="eyebrow light">WHAT WE BELIEVE</span><h2>Our happy <em>values</em></h2></div></div><div className="values-grid"><article><Leaf/><h3>Real is delicious</h3><p>ผลไม้จริง นมจริง และส่วนผสมที่เราอยากกินเอง</p></article><article><Sparkles/><h3>Stay curious</h3><p>ทดลองรสใหม่เสมอ เพื่อให้หน้าตู้สนุกทุกครั้งที่มา</p></article><article><Heart/><h3>Share the joy</h3><p>พื้นที่เล็ก ๆ สำหรับครอบครัว เพื่อน และวันธรรมดาที่อยากให้พิเศษ</p></article></div></div></section></main><Footer/></>; }
+
